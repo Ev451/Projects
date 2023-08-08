@@ -1,0 +1,7 @@
+def palindrome(word):
+    # Вычисляет длину строки
+    l = len(word)
+    # Сравнивает символы перед серединой строки и после середины
+    for i in range(l // 2):
+        if word[i] != word[-1 - i]:
+            print("False")
